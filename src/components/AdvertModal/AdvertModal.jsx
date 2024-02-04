@@ -12,8 +12,10 @@ import {
   RentalBtn,
   RentalConditionsText,
   RentalConditionsTitle,
+  RentalConditionsWrapper,
   RentalLink,
 } from "./AdvertModal.styled";
+import { normalizeRentalConditions } from "../../helpers";
 
 const AdvertModal = ({
   advert: {
@@ -42,28 +44,18 @@ const AdvertModal = ({
     <Modal open={open} onClose={closeModal}>
       <ModalContainer>
         <CloseBtn onClick={closeModal}>
-          <CloseIcon
-          // sx={{ position: "absolute", top: "16px", right: "16px" }}
-          />
+          <CloseIcon />
         </CloseBtn>
         <ModalImage src={img} alt={make} width={461} height={248} />
         <AdvertTitle>
           {make}, {year}
         </AdvertTitle>
         <ContainerText>
-          {/* <DecorateLine></DecorateLine> */}
-          {/* <SecondText>{address}</SecondText> */}
-          {/* <DecorateLine></DecorateLine> */}
-          <AdvertText>Id: {id}</AdvertText>
-          {/* <DecorateLine></DecorateLine> */}
-          <AdvertText>Year: {year}</AdvertText>
-          {/* <DecorateLine></DecorateLine> */}
-          {/* <SecondText></SecondText> */}
-          <AdvertText>Type: {type}</AdvertText>
-          {/* <DecorateLine></DecorateLine> */}
-          <AdvertText>Fuel Consumption: {fuelConsumption}</AdvertText>
-          {/* <DecorateLine></DecorateLine> */}
-          <AdvertText>Engine Size:{engineSize}</AdvertText>
+          <AdvertText>
+            Id: {id}&nbsp;|&nbsp;Year: {year}&nbsp;|&nbsp;Type: {type}
+            &nbsp;|&nbsp;Fuel Consumption: {fuelConsumption}&nbsp;|&nbsp;Engine
+            Size:{engineSize}
+          </AdvertText>
         </ContainerText>
         <AdvertDescription>{description}</AdvertDescription>
         <AccessoriesFunctionalities>
@@ -71,11 +63,18 @@ const AdvertModal = ({
         </AccessoriesFunctionalities>
         <ContainerText>
           {arrayFunctionalitiesAccessories?.map((item) => (
-            <AdvertText key={item}>{item}</AdvertText>
+            <AdvertText key={item}>{item}&nbsp;|&nbsp;</AdvertText>
           ))}
         </ContainerText>
         <RentalConditionsTitle>Rental Conditions: </RentalConditionsTitle>
-        <RentalConditionsText>{rentalConditions}</RentalConditionsText>
+        <RentalConditionsWrapper>
+          {normalizeRentalConditions(rentalConditions).map((condition) => (
+            <RentalConditionsText key={condition}>
+              {condition}
+            </RentalConditionsText>
+          ))}
+        </RentalConditionsWrapper>
+
         <RentalBtn type="button">
           <RentalLink href="tel:+110001111111">Rental car</RentalLink>
         </RentalBtn>

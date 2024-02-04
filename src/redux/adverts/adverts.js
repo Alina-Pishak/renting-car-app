@@ -9,15 +9,9 @@ export const advertsApi = createApi({
   tagTypes: ["adverts"],
   endpoints: (builder) => ({
     getAdverts: builder.query({
-      query: () => ({
+      query: (data) => ({
         url: API_ENDPOINTS,
-        // params: { page, limit },
-      }),
-      providesTags: ["adverts"],
-    }),
-    getAdvertById: builder.query({
-      query: (id) => ({
-        url: `${API_ENDPOINTS}/${id}`,
+        params: { page: data?.page, limit: data?.limit },
       }),
     }),
   }),

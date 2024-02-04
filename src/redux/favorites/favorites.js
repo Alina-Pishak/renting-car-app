@@ -12,8 +12,6 @@ const slice = createSlice({
       state.favorites = state.favorites.filter(
         (favorite) => favorite.id !== payload
       );
-      // console.log("state.favorites", state.favorites);
-      // console.log("payload", payload);
     },
   },
 });

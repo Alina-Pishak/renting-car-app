@@ -1,42 +1,9 @@
-// import AppBar from "@mui/material/AppBar";
-// import Box from "@mui/material/Box";
-// import CssBaseline from "@mui/material/CssBaseline";
-// import Toolbar from "@mui/material/Toolbar";
-// import { Link } from "react-router-dom";
-
-// function DrawerAppBar() {
-//   return (
-//     <Box sx={{ display: "flex" }}>
-//       <CssBaseline />
-//       <AppBar component="nav">
-//         <Toolbar>
-//           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-//             <Link to="/" sx={{ color: "#fff" }}>
-//               Home
-//             </Link>
-//             <Link to="catalog" sx={{ color: "#fff" }}>
-//               Catalog
-//             </Link>
-//             <Link to="favorite" sx={{ color: "#fff" }}>
-//               Favorite
-//             </Link>
-//           </Box>
-//         </Toolbar>
-//       </AppBar>
-//     </Box>
-//   );
-// }
-
-// export default DrawerAppBar;
-
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import CssBaseline from "@mui/material/CssBaseline";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
-import { Link } from "react-router-dom";
 import { HeaderLink } from "./Header.styled";
-import DirectionsCarFilledOutlinedIcon from "@mui/icons-material/DirectionsCarFilledOutlined";
 
 function ElevationScroll(props) {
   const { children, window } = props;
@@ -57,8 +24,7 @@ export default function Header(props) {
       <CssBaseline />
       <ElevationScroll {...props}>
         <AppBar>
-          <Toolbar sx={{ justifyContent: "center" }}>
-            <DirectionsCarFilledOutlinedIcon fontSize="large" />
+          <Toolbar sx={{ justifyContent: "center", background: "#3470ff" }}>
             <HeaderLink to="/" sx={{ color: "#fff" }}>
               Home
             </HeaderLink>
