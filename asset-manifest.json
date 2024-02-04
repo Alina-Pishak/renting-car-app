@@ -1,16 +1,14 @@
 {
   "files": {
-    "main.css": "/renting-car-app/static/css/main.f855e6bc.css",
-    "main.js": "/renting-car-app/static/js/main.04852711.js",
-    "static/js/787.2325e45e.chunk.js": "/renting-car-app/static/js/787.2325e45e.chunk.js",
-    "static/media/logo.svg": "/renting-car-app/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/renting-car-app/static/css/main.2775793b.css",
+    "main.js": "/renting-car-app/static/js/main.a36b63cd.js",
+    "static/media/rental-car-bg.jpg": "/renting-car-app/static/media/rental-car-bg.a810f0a99943e1f6f5b2.jpg",
     "index.html": "/renting-car-app/index.html",
-    "main.f855e6bc.css.map": "/renting-car-app/static/css/main.f855e6bc.css.map",
-    "main.04852711.js.map": "/renting-car-app/static/js/main.04852711.js.map",
-    "787.2325e45e.chunk.js.map": "/renting-car-app/static/js/787.2325e45e.chunk.js.map"
+    "main.2775793b.css.map": "/renting-car-app/static/css/main.2775793b.css.map",
+    "main.a36b63cd.js.map": "/renting-car-app/static/js/main.a36b63cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.04852711.js"
+    "static/css/main.2775793b.css",
+    "static/js/main.a36b63cd.js"
   ]
 }
