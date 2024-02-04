@@ -1,26 +1,3 @@
-:root {
-  --color-primary: #121417;;
-  /* --color-secondary: #2E2F42;
-  --color-action: #4D5AE5;
-  --color-brand: #2E2F42;
-  --color-brand-light: #F4F4FD;
-  --color-invert: #fff;
-  --color-logo: #4D5AE5;
-  --color-action-light: #E7E9FC;
-  --color-background: #fff;
-  --color-logo-header: #2E2F42;
-  --color-logo-footer: #F4F4FD;
-  --color-footer-text: #F4F4FD;
-  --color-hover-link: #404BBF;
-  --color-hover-btn: #404BBF;
-  --color-line: #E7E9FC;
-  --color-icon-background: #4D5AE5;
-  --color-icon-background-active: #31D0AA;
-  --color-customers-icon: #8E8F99;
-  --color-focus-input: #4D5AE5;
-  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-}
-
 *{
   font-family: 'Manrope', sans-serif;
 }
