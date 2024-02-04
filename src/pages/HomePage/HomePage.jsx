@@ -1,6 +1,5 @@
 import React from "react";
 import { HeroBtn, HeroContainer, HeroText, HeroTitle } from "./HomePage.styled";
-import { Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
