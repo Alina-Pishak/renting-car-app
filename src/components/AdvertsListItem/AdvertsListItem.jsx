@@ -54,7 +54,7 @@ const AdvertsListItem = ({ adverts, favorites }) => {
                   htmlColor="#3470FF"
                   sx={{ position: "absolute", top: "14px", right: "14px" }}
                   onClick={() => {
-                    removeFromFavorites(advert);
+                    removeFromFavorites(advert.id);
                   }}
                 />
               )
