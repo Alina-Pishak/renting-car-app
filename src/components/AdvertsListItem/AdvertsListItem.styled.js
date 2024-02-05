@@ -28,13 +28,18 @@ export const MainText = styled.p`
   line-height: 1.5;
 `;
 
-export const SecondText = styled.p`
+export const TextList = styled.ul`
+  margin-bottom: 28px;
+  width: 270px;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+export const TextItem = styled.li`
   color: rgba(18, 20, 23, 0.5);
   font-size: 12px;
   line-height: 1.5;
-  width: 270px;
-  height: 40px;
-  margin-bottom: 28px;
 `;
 
 export const ContainerSecondText = styled.div`

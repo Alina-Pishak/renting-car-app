@@ -4,8 +4,9 @@ import {
   Item,
   LearnMoreBtn,
   MainText,
-  SecondText,
   TextContainer,
+  TextItem,
+  TextList,
 } from "../AdvertsListItem/AdvertsListItem.styled";
 import { useDispatch } from "react-redux";
 import { removeFavorite } from "../../redux/favorites/favorites";
@@ -49,13 +50,20 @@ const FavoritesListItem = ({ favorites }) => {
             </MainText>
             <MainText>{advert.rentalPrice}</MainText>
           </TextContainer>
-          <SecondText>
-            {normalizeAddress(advert.address)}&nbsp;|&nbsp;
-            {advert.rentalCompany}
-            &nbsp;|&nbsp;{advert.type}&nbsp;|&nbsp;
-            {advert.make}&nbsp;|&nbsp;
-            {advert.id}&nbsp;|&nbsp;{advert.functionalities[0]}
-          </SecondText>
+          <TextList>
+            <TextItem>{normalizeAddress(advert.address)}&nbsp;|&nbsp;</TextItem>
+            <TextItem>
+              {advert.rentalCompany}
+              &nbsp;|&nbsp;
+            </TextItem>
+            <TextItem>{advert.type}&nbsp;|&nbsp;</TextItem>
+            <TextItem>{advert.make}&nbsp;|&nbsp;</TextItem>
+            <TextItem>
+              {advert.id}
+              &nbsp;|&nbsp;
+            </TextItem>
+            <TextItem>{advert.engineSize}</TextItem>
+          </TextList>
           <LearnMoreBtn type="button" onClick={() => openModal(advert)}>
             Learn more
           </LearnMoreBtn>
