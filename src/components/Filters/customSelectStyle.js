@@ -9,6 +9,9 @@ export const selectStyles = {
     border: isFocused ? "none" : "none",
     borderColor: isFocused ? "transparent" : "transparent",
     color: "#121417",
+    fontSize: "18px",
+    fontWeight: 500,
+    lineHeight: 1.1,
   }),
   option: (styles, { isFocused, isSelected }) => {
     return {
