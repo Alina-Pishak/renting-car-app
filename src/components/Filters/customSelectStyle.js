@@ -8,6 +8,7 @@ export const selectStyles = {
     outline: isFocused ? "none" : "none",
     border: isFocused ? "none" : "none",
     borderColor: isFocused ? "transparent" : "transparent",
+    color: "#121417",
   }),
   option: (styles, { isFocused, isSelected }) => {
     return {
@@ -26,5 +27,12 @@ export const selectStyles = {
     border: "1px solid rgba(18, 20, 23, 0.05)",
     background: "#fff",
     boxShadow: "0px 4px 36px 0px rgba(0, 0, 0, 0.02)",
+  }),
+  placeholder: (styles) => ({
+    ...styles,
+    color: "#121417",
+    fontSize: "18px",
+    fontWeight: 500,
+    lineHeight: 1.1,
   }),
 };

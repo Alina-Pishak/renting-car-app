@@ -24,3 +24,9 @@ export const LoadMoreBtn = styled.button`
     color: #0b44cd;
   }
 `;
+
+export const PlugContainer = styled.div`
+  margin: 0 auto;
+  margin-top: 20%;
+  text-align: center;
+`;

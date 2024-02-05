@@ -1,4 +1,3 @@
-import { Select } from "@mui/material";
 import styled from "styled-components";
 
 export const FiltersForm = styled.form`
@@ -17,15 +16,6 @@ export const FilterContainer = styled.div`
 
 export const FlexContainer = styled.div`
   display: flex;
-`;
-
-export const SelectCustom = styled(Select)`
-  height: 48px;
-  border-radius: 14px;
-  background: #f7f7fb;
-  &:focus {
-    border: none;
-  }
 `;
 
 export const FiltersLabel = styled.label`
